@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:FPEGenerator"
         mc:Ignorable="d"
         Title="FPE Generator" Height="450" Width="800">
-    
+
     <Grid>
         <Label x:Name="label_activeDirectory" Content="Active Directory: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_activeDirectoryFilepath" Content="" HorizontalAlignment="Left" Margin="110,10,0,0" VerticalAlignment="Top" Width="311"/>
@@ -14,7 +14,7 @@
         <Label x:Name="label_materialType_Copy" Content="Collision Type" HorizontalAlignment="Left" Margin="245,140,0,0" VerticalAlignment="Top" Width="100"/>
 
         <ListBox x:Name="listBox_activeDirectory" d:ItemsSource="{d:SampleData ItemCount=10}" Margin="10,40,560,4"/>
-        
+
         <RadioButton x:Name="radioButton_matType_silent" Content="Silent" HorizontalAlignment="Left" Margin="245,70,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="radioButton_matType_stone" Content="Stone" HorizontalAlignment="Left" Margin="245,90,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="radioButton_matType_metal" Content="Metal" HorizontalAlignment="Left" Margin="245,110,0,0" VerticalAlignment="Top"/>
@@ -25,6 +25,8 @@
         <RadioButton x:Name="radioButton_collType_tree" Content="Tree" HorizontalAlignment="Left" Margin="245,250,0,0" VerticalAlignment="Top" Checked="radioButton_Copy3_Checked"/>
 
         <Button x:Name="button" Content="Generate FPE" HorizontalAlignment="Left" Margin="245,400,0,0" VerticalAlignment="Top" Height="30" Width="122" Click="button_Click"/>
+        <Label x:Name="label_dynamic" Content="Static/Dynamic" HorizontalAlignment="Left" Margin="245,280,0,0" VerticalAlignment="Top" Width="100"/>
+        <RadioButton x:Name="radioButton_static" Content="Static/Dynamic" HorizontalAlignment="Left" Margin="245,300,0,0" VerticalAlignment="Top"/>
     </Grid>
-    
+
 </Window>
