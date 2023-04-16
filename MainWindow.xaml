@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FPEGenerator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="FPE Generator" Height="450" Width="800">
     <Grid>
+        <Label x:Name="label_activeDirectory" Content="Active Directory: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_activeDirectoryFilepath" Content="" HorizontalAlignment="Left" Margin="110,10,0,0" VerticalAlignment="Top" Width="311"/>
+        <ListBox x:Name="listBox_activeDirectory" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,41,560,10"/>
+        <RadioButton x:Name="radioButton" Content="Silent" HorizontalAlignment="Left" Margin="245,72,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton_Copy" Content="Stone" HorizontalAlignment="Left" Margin="245,92,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton_Copy1" Content="Metal" HorizontalAlignment="Left" Margin="245,112,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton_Copy2" Content="Polygon / Mesh" HorizontalAlignment="Left" Margin="245,171,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton_Copy3" Content="Box" HorizontalAlignment="Left" Margin="245,191,0,0" VerticalAlignment="Top" Checked="radioButton_Copy3_Checked"/>
+        <Label x:Name="label_materialType" Content="Material Type" HorizontalAlignment="Left" Margin="245,41,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="label_materialType_Copy" Content="Collision Type" HorizontalAlignment="Left" Margin="245,140,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
